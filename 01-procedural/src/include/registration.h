@@ -4,12 +4,13 @@
 #include "student.h"
 #include "programme.h"
 
-struct registration {
-   struct student* student;
-   struct programme* programme;
+struct registration
+{
+   struct programme *programme;
+   struct student *student;
 };
 
-void initRegistration(struct registration*, struct student*, struct programme*);
+void initRegistration(struct registration *, struct programme *, struct student *);
 void printRegistration(struct registration);
 
 #endif

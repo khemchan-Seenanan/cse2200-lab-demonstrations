@@ -1,13 +1,14 @@
 #ifndef PROGRAMME_H
 #define PROGRAMME_H
 
-struct programme {
-   int code;
+struct programme
+{
+   char code[5];
    char name[64];
    int credits;
 };
 
-void initProgramme(struct programme*, int, char[], int);
+void initProgramme(struct programme *, char[], char[], int);
 void printProgramme(struct programme);
 
 #endif
